@@ -9,13 +9,20 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@types/formidable": "^3.5.1",
+    "formidable": "^3.5.4",
     "next": "16.2.3",
+    "pdf-text-extract": "^1.5.0",
+    "pdf2json": "^4.0.3",
+    "pdfjs-dist": "^2.16.105",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.39",
+    "@types/pdf-parse": "^1.1.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
