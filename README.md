@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📚 AI PDF Flashcard App
 
-## Getting Started
+A smart flashcard generator that converts PDF documents into structured, interactive study decks using AI. Built with Next.js.
+It helps students learn more effectively using active recall and spaced repetition, instead of passive reading.
+The system extracts key concepts from documents and turns them into meaningful flashcards that can be revised and tracked over time.
 
-First, run the development server:
+🚀 Why this project?
+  - Most students struggle with:
+  - Memorizing large content from PDFs
+  - Inefficient revision methods
+  - Passive reading without retention
 
-```bash
+This app solves that by automatically converting study material into an interactive learning system.
+
+🚀 Features
+📄 Upload any PDF (notes, textbooks, documents)
+🤖 AI-powered flashcard generation
+🧠 Extracts:
+Key concepts
+  - Definitions
+  - Important relationships
+  - Examples & edge cases
+🗂️ Multiple deck management
+⚡ Fast, responsive UI
+
+🧠 How it works
+User uploads a PDF
+Backend extracts text content
+AI processes content and generates flashcards
+Flashcards are stored in structured decks
+
+🛠️ Tech Stack
+Next.js (App Router)
+TypeScript
+Tailwind CSS
+PDF parsing library
+AI API (OpenAI / similar)
+Node.js backend routes
+
+🧩 Project Structure
+/app – Pages & API routes
+/components – UI components
+/lib – Utility functions (PDF parsing, AI logic, etc.)
+/types – TypeScript types
+
+▶️ Getting Started
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the app in your browser:
+http://localhost:<port>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📈 Future Improvements
+OCR support for scanned PDFs
+Better AI prompt tuning for higher-quality cards
+User authentication
+Cloud sync for decks
+Mobile responsive flashcard mode
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🏗️Architecture
+User Uploads PDF
+        ↓
+Frontend (Next.js UI)
+        ↓
+API Route (/api/...)
+        ↓
+PDF Processing (pdf-parse)
+        ↓
+Text Extraction & Cleaning
+        ↓
+AI Model (Flashcard Generation)
+        ↓
+Structured Flashcards
+        ↓
+Frontend Displays Deck
 
-## Learn More
+##screenshots
+<img width="1920" height="1140" alt="Screenshot 2026-04-17 021810" src="https://github.com/user-attachments/assets/41d6dbb9-11cc-4cb4-8b0b-ef952b1e4e06" />
+<img width="1920" height="1140" alt="Screenshot 2026-04-17 021645" src="https://github.com/user-attachments/assets/503886bf-ebba-428f-83d4-3a00e29ca0a1" />
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
