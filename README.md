@@ -37,6 +37,9 @@ PDF parsing library
 AI API (OpenAI / similar)
 Node.js backend routes
 
+### 📚 Flashcard Learning System
+🌐 Live Demo: https://flashcard-learning-system.vercel.app/
+
 🧩 Project Structure
 /app – Pages & API routes
 /components – UI components
